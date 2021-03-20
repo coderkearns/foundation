@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "foundation": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coderkearns/foundation.git"
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/coderkearns/foundation#readme",
   "dependencies": {
-    "commander": "^7.1.0"
+    "commander": "^7.1.0",
+    "fs-extra": "^9.1.0"
   }
 }
