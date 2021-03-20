@@ -21,6 +21,7 @@
   "homepage": "https://github.com/coderkearns/foundation#readme",
   "dependencies": {
     "commander": "^7.1.0",
-    "fs-extra": "^9.1.0"
+    "fs-extra": "^9.1.0",
+    "shelljs": "^0.8.4"
   }
 }
