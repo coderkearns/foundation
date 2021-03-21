@@ -5,8 +5,8 @@ const vars = require("../vars.js")
 const templatepath = `${vars.dirname}/foundations`
 
 module.exports = source => {
-  sourcepath = path.resolve(source)
-  name = path.basename(sourcepath)
+  let sourcepath = path.resolve(source)
+  let name = path.basename(sourcepath)
   fse.copySync(sourcepath, `${templatepath}/${name}`)
   console.log(`Succesfully created foundation ${name}.`)
 }

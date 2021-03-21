@@ -7,7 +7,7 @@ const vars = require("../vars.js")
 const templatepath = `${vars.dirname}/foundations`
 
 module.exports = (foundation, name) => {
-  sourcepath = path.resolve(name)
+  let sourcepath = path.resolve(name)
   fse.copySync(`${templatepath}/${foundation}`, sourcepath)
   process.cwd(`./${name}/`)
   if (fs.existsSync("./init.sh")) {

@@ -30,5 +30,13 @@ program
     require("./util/remove.js")(foundation)
   })
 
+// list command
+program
+  .command("list")
+  .description("List foundations.")
+  .action(() => {
+    require("./util/list.js")()
+  })
+
 
 program.parse()
